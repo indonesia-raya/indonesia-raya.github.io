@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesia: Zamrud Khatulistiwa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/lucide.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body class="antialiased">
+
+    <nav class="fixed w-full z-50 transition-all duration-300" id="navbar">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between items-center h-20">
+		  <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+			<div class="w-8 h-8 rounded-full bg-red-gradient shadow-lg flex items-center justify-center">
+			  <span class="text-white font-bold text-sm">ID</span>
+			</div>
+			<span class="font-bold text-xl tracking-wider text-white" id="nav-brand">INDONESIA</span>
+		  </div>
+
+		  <!-- Desktop Menu -->
+		  <div class="hidden md:flex space-x-8">
+			<a href="#sejarah" class="nav-link text-white hover:text-red-200 transition-colors font-medium text-sm tracking-wide">SEJARAH</a>
+			<a href="#perkembangan" class="nav-link text-white hover:text-red-200 transition-colors font-medium text-sm tracking-wide">PERKEMBANGAN</a>
+			<a href="#bersejarah" class="nav-link text-white hover:text-red-200 transition-colors font-medium text-sm tracking-wide">JEJAK SEJARAH</a>
+			<a href="#wisata" class="nav-link text-white hover:text-red-200 transition-colors font-medium text-sm tracking-wide">DESTINASI</a>
+		  </div>
+
+		  <!-- Mobile Menu Button -->
+		  <div class="md:hidden flex items-center">
+			<button id="mobile-menu-btn" class="text-white hover:text-red-200 focus:outline-none">
+			  <i data-lucide="menu" class="h-6 w-6"></i>
+			</button>
+		  </div>
+		</div>
+	  </div>
+
+	  <!-- Mobile Menu -->
+	  <div id="mobile-menu" class="hidden md:hidden bg-white shadow-xl absolute w-full">
+		<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+		  <a href="#sejarah" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-[#D52B1E] hover:bg-red-50">Sejarah</a>
+		  <a href="#perkembangan" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-[#D52B1E] hover:bg-red-50">Perkembangan</a>
+		  <a href="#bersejarah" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-[#D52B1E] hover:bg-red-50">Jejak Sejarah</a>
+		  <a href="#wisata" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-[#D52B1E] hover:bg-red-50">Destinasi Wisata</a>
+		</div>
+	  </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center overflow-hidden hero-pattern">
+	  <div class="absolute inset-0 hero-overlay"></div>
+
+	  <!-- Decorative Elements -->
+	  <div class="absolute top-1/4 left-10 w-24 h-24 border-t-2 border-l-2 border-white/30 rounded-tl-3xl opacity-50"></div>
+	  <div class="absolute bottom-1/4 right-10 w-24 h-24 border-b-2 border-r-2 border-white/30 rounded-br-3xl opacity-50"></div>
+
+	  <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+		<span class="block text-red-200 text-sm md:text-base font-semibold tracking-[0.3em] uppercase mb-4 opacity-0 transform translate-y-4 animate-fade-in-up" style="animation-delay: 0.2s;">Zamrud Khatulistiwa</span>
+		<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-2xl opacity-0 transform translate-y-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+		  Pesona <br/><span class="italic text-red-100">Indonesia</span>
+		</h1>
+		<p class="text-lg md:text-xl text-gray-100 mb-10 max-w-2xl mx-auto font-light leading-relaxed opacity-0 transform translate-y-4 animate-fade-in-up" style="animation-delay: 0.6s;">
+		  Menjelajahi keagungan sejarah, pesatnya perkembangan, dan keindahan abadi nusantara.
+		</p>
+		<a href="#sejarah" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-full text-[#D52B1E] bg-white hover:bg-gray-50 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 opacity-0 transform translate-y-4 animate-fade-in-up" style="animation-delay: 0.8s;">
+		  Mulai Menjelajah
+		  <i data-lucide="arrow-down" class="ml-2 w-4 h-4 animate-bounce"></i>
+		</a>
+	  </div>
+
+	  <!-- Scroll Indicator -->
+	  <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-70">
+		<div class="w-[1px] h-16 bg-gradient-to-b from-white to-transparent"></div>
+	  </div>
+    </header>
+
+    <main>
+	  <section id="sejarah" class="py-24 bg-white relative">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+			
+			<div class="order-2 lg:order-1 relative">
+			  <div class="absolute inset-0 bg-red-100 rounded-3xl transform -rotate-3 scale-105 z-0"></div>
+			  <img src="peta-kemerdekaan-indonesia.jpg" alt="Sejarah Indonesia - Candi" class="relative z-10 rounded-3xl shadow-2xl object-cover w-full h-[450px] -right-2">
+			  <div class="absolute -bottom-6 -right-2 bg-white p-4 rounded-xl shadow-xl z-20 flex items-center gap-4">
+				<div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-[#D52B1E] px-4 py-2 mr-4">
+				  <i data-lucide="history" class="w-6 h-6"></i>
+				</div>
+				<div>
+				  <p class="text-sm text-gray-500 font-medium">Kemerdekaan</p>
+				  <p class="font-bold text-lg">17 Agustus 1945</p>
+				</div>
+			  </div>
+			</div>
+			
+			<div class="order-1 lg:order-2">
+			  <div class="flex items-center gap-4 mb-4">
+				<div class="w-12 h-[2px] bg-[#D52B1E]"></div>
+				<span class="text-[#D52B1E] font-semibold tracking-wider uppercase text-sm">Awal Mula Bangsa</span>
+			  </div>
+			  <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">Jejak Langkah <span class="text-red-gradient">Sejarah</span> Indonesia</h2>
+
+			  <div class="space-y-6 text-gray-600 leading-relaxed text-lg">
+				<p>Sejarah Indonesia adalah permadani yang ditenun dengan benang-benang kerajaan kuno, era kolonial yang panjang, dan perjuangan heroik menuju kemerdekaan. Jauh sebelum menjadi republik, nusantara ini dikuasai oleh kerajaan-kerajaan besar maritim dan agraris seperti Sriwijaya di Sumatera dan Majapahit di Jawa, yang pengaruhnya meluas hingga ke Asia Tenggara.</p>
+				<p>Kedatangan bangsa Eropa pada abad ke-16, dimulai dari Portugis, Spanyol, lalu Belanda, mengubah lanskap politik dan ekonomi nusantara. Masa penjajahan Belanda (Hindia Belanda) berlangsung selama lebih dari tiga abad, meninggalkan jejak mendalam dalam struktur sosial dan arsitektur kita.</p>
+				<p class="font-medium text-gray-800 border-l-4 border-[#D52B1E] pl-4 italic">Puncak dari kesadaran nasional bermuara pada Proklamasi Kemerdekaan pada 17 Agustus 1945 oleh Ir. Soekarno dan Mohammad Hatta, menandai lahirnya negara kesatuan Republik Indonesia yang merdeka dan berdaulat.</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section id="perkembangan" class="py-24 bg-gray-50 relative overflow-hidden">
+		<!-- Background pattern -->
+		<div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#D52B1E 1px, transparent 1px); background-size: 30px 30px;"></div>
+
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+		  <div class="text-center max-w-3xl mx-auto mb-16">
+			<span class="text-[#D52B1E] font-semibold tracking-wider uppercase text-sm mb-2 block">Era Modern</span>
+			<h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Perkembangan <span class="text-red-gradient">Indonesia Kini</span></h2>
+			<p class="text-gray-600 text-lg">Dari negara agraris pasca-kemerdekaan menjadi salah satu kekuatan ekonomi terbesar di Asia Tenggara.</p>
+		  </div>
+
+		  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<!-- Card 1 -->
+			<div class="glass-card p-8 rounded-2xl hover-lift bg-white">
+			  <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 text-[#D52B1E]">
+				<i data-lucide="trending-up" class="w-7 h-7"></i>
+			  </div>
+			  <h3 class="text-xl font-bold mb-3 text-gray-900">Ekonomi Berkembang</h3>
+			  <p class="text-gray-600 leading-relaxed">
+				Indonesia kini tergabung dalam G20, menunjukkan posisinya sebagai salah satu ekonomi utama dunia. Fokus pada industrialisasi, ekonomi digital, dan hilirisasi sumber daya alam terus mendorong pertumbuhan.
+			  </p>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="glass-card p-8 rounded-2xl hover-lift bg-white border-b-4 border-[#D52B1E]">
+			  <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 text-[#D52B1E]">
+				<i data-lucide="building-2" class="w-7 h-7"></i>
+			  </div>
+			  <h3 class="text-xl font-bold mb-3 text-gray-900">Masifnya Infrastruktur</h3>
+			  <p class="text-gray-600 leading-relaxed">
+				Pembangunan infrastruktur yang pesat, mulai dari jalan tol Trans-Jawa dan Trans-Sumatera, bandara baru, bendungan, hingga transportasi massal modern seperti MRT dan Kereta Cepat Jakarta-Bandung (Whoosh).
+			  </p>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="glass-card p-8 rounded-2xl hover-lift bg-white">
+			  <div class="w-14 h-14 bg-red-50 rounded-2xl flex items-center justify-center mb-6 text-[#D52B1E]">
+				<i data-lucide="cpu" class="w-7 h-7"></i>
+			  </div>
+			  <h3 class="text-xl font-bold mb-3 text-gray-900">Transformasi Digital</h3>
+			  <p class="text-gray-600 leading-relaxed">
+				Lahirnya berbagai *startup* unicorn karya anak bangsa menempatkan Indonesia di peta digital global. Penetrasi internet yang luas mendisrupsi cara masyarakat berbelanja, belajar, dan berbisnis.
+			  </p>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section id="bersejarah" class="py-24 bg-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+			<div class="max-w-2xl">
+			  <div class="flex items-center gap-4 mb-4">
+				<div class="w-12 h-[2px] bg-[#D52B1E]"></div>
+				<span class="text-[#D52B1E] font-semibold tracking-wider uppercase text-sm">Warisan Leluhur</span>
+			  </div>
+			  <h2 class="text-4xl md:text-5xl font-bold text-gray-900">Saksi Bisu <span class="text-red-gradient">Peradaban</span></h2>
+			</div>
+			<p class="text-gray-600 max-w-md text-right hidden md:block">
+			  Menelusuri kemegahan arsitektur masa lalu yang menceritakan kejayaan dan keberagaman budaya nusantara.
+			</p>
+		  </div>
+
+		  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+			<!-- History Item 1 -->
+			<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] hover-lift cursor-pointer shadow-lg">
+			  <img src="https://images.unsplash.com/photo-1582298538104-e0c1b759ed64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Candi Borobudur" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6">
+				<span class="text-red-300 text-xs font-bold tracking-wider uppercase mb-2 block">Magelang, Jawa Tengah</span>
+				<h3 class="text-white font-bold text-2xl mb-2">Candi Borobudur</h3>
+				<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 line-clamp-3">
+				  Candi Buddha terbesar di dunia, dibangun abad ke-9, diapit pegunungan indah. Keajaiban arsitektur kuno Indonesia.
+				</p>
+			  </div>
+			</div>
+
+			<!-- History Item 2 -->
+			<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] hover-lift cursor-pointer shadow-lg lg:mt-8">
+			  <img src="https://images.unsplash.com/photo-1601058497548-f247dfe339d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gedung Sate" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6">
+				<span class="text-red-300 text-xs font-bold tracking-wider uppercase mb-2 block">Bandung, Jawa Barat</span>
+				<h3 class="text-white font-bold text-2xl mb-2">Gedung Sate</h3>
+				<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 line-clamp-3">
+				  Ikon kota Bandung dengan arsitektur Hindia Baru. Memiliki ornamen seperti tusuk sate di menara sentralnya yang menjadi ciri khas.
+				</p>
+			  </div>
+			</div>
+
+			<!-- History Item 3 -->
+			<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] hover-lift cursor-pointer shadow-lg">
+			  <img src="https://images.unsplash.com/photo-1634599105436-a192df7850a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Candi Prambanan" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6">
+				<span class="text-red-300 text-xs font-bold tracking-wider uppercase mb-2 block">Yogyakarta</span>
+				<h3 class="text-white font-bold text-2xl mb-2">Candi Prambanan</h3>
+				<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 line-clamp-3">
+				  Kompleks candi Hindu terbesar di Indonesia dari abad ke-9, didedikasikan untuk Trimurti. Memiliki relief epos Hindu yang memukau.
+				</p>
+			  </div>
+			</div>
+
+			<!-- History Item 4 -->
+			<div class="group relative overflow-hidden rounded-2xl aspect-[3/4] hover-lift cursor-pointer shadow-lg lg:mt-8">
+			  <img src="https://images.unsplash.com/photo-1542385262-cdf667104dce?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Jam Gadang" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6">
+				<span class="text-red-300 text-xs font-bold tracking-wider uppercase mb-2 block">Bukittinggi, Sumatera Barat</span>
+				<h3 class="text-white font-bold text-2xl mb-2">Jam Gadang</h3>
+				<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0 line-clamp-3">
+				  Ikon kota Bukittinggi yang dibangun tahun 1926. Uniknya, bangunan ini tidak menggunakan besi dan semen, melainkan kapur, putih telur, dan pasir.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section id="wisata" class="py-24 bg-[#1a1a1a] text-white">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		  <div class="text-center max-w-3xl mx-auto mb-16">
+			<span class="text-[#D52B1E] font-semibold tracking-wider uppercase text-sm mb-2 block">Eksplorasi Alam</span>
+			<h2 class="text-4xl md:text-5xl font-bold mb-6">Surga <span class="text-red-500">Tropis</span> Dunia</h2>
+			<p class="text-gray-400 text-lg">Dari bentangan pantai berpasir putih hingga megahnya pegunungan vulkanik.</p>
+		  </div>
+
+		  <!-- Featured Destination -->
+		  <div class="relative rounded-3xl overflow-hidden mb-8 group h-[60vh] min-h-[400px]">
+			<img src="https://images.unsplash.com/photo-1537956965359-7573183d1f57?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Bali" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+			<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+			<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full md:w-2/3">
+			  <div class="inline-block bg-[#D52B1E] text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Destinasi Utama</div>
+			  <h3 class="text-4xl md:text-6xl font-bold mb-4">Pulau Dewata, Bali</h3>
+			  <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+				Ikon pariwisata Indonesia yang terkenal di seluruh dunia. Menawarkan perpaduan sempurna antara pantai yang indah, budaya Hindu yang kaya, terasering sawah yang hijau, dan kehidupan malam yang semarak.
+			  </p>
+			  <button class="flex items-center gap-2 text-white font-medium hover:text-[#D52B1E] transition-colors border-b border-white/30 hover:border-[#D52B1E] pb-1">
+				Jelajahi Bali <i data-lucide="arrow-right" class="w-4 h-4"></i>
+			  </button>
+			</div>
+		  </div>
+
+		  <!-- Other Destinations Grid -->
+		  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+			<!-- Wisata 1 -->
+			<div class="group relative rounded-2xl overflow-hidden h-80 cursor-pointer">
+			  <img src="https://images.unsplash.com/photo-1518090708605-64d1f274a7ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Raja Ampat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6 w-full">
+				<h4 class="text-2xl font-bold mb-1 group-hover:text-red-400 transition-colors">Raja Ampat</h4>
+				<p class="text-sm text-gray-400">Papua Barat Daya</p>
+				<p class="text-gray-300 text-sm mt-3 h-0 opacity-0 overflow-hidden transition-all duration-300 group-hover:h-auto group-hover:opacity-100 group-hover:mt-3">
+				  Surga tersembunyi bagi para penyelam dengan keanekaragaman hayati laut terkaya di dunia.
+				</p>
+			  </div>
+			</div>
+
+			<!-- Wisata 2 -->
+			<div class="group relative rounded-2xl overflow-hidden h-80 cursor-pointer">
+			  <img src="https://images.unsplash.com/photo-1603565816030-6b389eeb23cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gunung Bromo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6 w-full">
+				<h4 class="text-2xl font-bold mb-1 group-hover:text-red-400 transition-colors">Gunung Bromo</h4>
+				<p class="text-sm text-gray-400">Jawa Timur</p>
+				<p class="text-gray-300 text-sm mt-3 h-0 opacity-0 overflow-hidden transition-all duration-300 group-hover:h-auto group-hover:opacity-100 group-hover:mt-3">
+				  Menawarkan panorama matahari terbit yang spektakuler dengan lanskap lautan pasir dan kawah aktif.
+				</p>
+			  </div>
+			</div>
+
+			<!-- Wisata 3 -->
+			<div class="group relative rounded-2xl overflow-hidden h-80 cursor-pointer">
+			  <img src="https://images.unsplash.com/photo-1555624795-300d662dfdb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Danau Toba" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+			  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
+			  <div class="absolute bottom-0 left-0 p-6 w-full">
+				<h4 class="text-2xl font-bold mb-1 group-hover:text-red-400 transition-colors">Danau Toba</h4>
+				<p class="text-sm text-gray-400">Sumatera Utara</p>
+				<p class="text-gray-300 text-sm mt-3 h-0 opacity-0 overflow-hidden transition-all duration-300 group-hover:h-auto group-hover:opacity-100 group-hover:mt-3">
+				  Danau vulkanik terbesar di dunia yang menyimpan keindahan alam dan budaya Batak yang kental.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="py-20 bg-red-gradient relative overflow-hidden">
+		<div class="absolute inset-0 opacity-10" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+		<div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+		  <i data-lucide="quote" class="w-12 h-12 text-white/50 mx-auto mb-6"></i>
+		  <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 serif-font leading-tight">
+			"Bhinneka Tunggal Ika"
+		  </h2>
+		  <p class="text-red-100 text-xl md:text-2xl font-light">
+			Berbeda-beda tetapi tetap satu jua. Sebuah harmoni dalam keberagaman budaya, agama, dan bahasa di bawah panji Sang Saka Merah Putih.
+		  </p>
+		</div>
+	  </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+		  <div class="col-span-1 md:col-span-2">
+			<div class="flex items-center gap-2 mb-4">
+			  <div class="w-8 h-8 rounded-full bg-red-gradient flex items-center justify-center">
+				<span class="text-white font-bold text-xs">ID</span>
+			  </div>
+			  <span class="font-bold text-xl tracking-wider text-white">INDONESIA</span>
+			</div>
+			<p class="text-sm text-gray-400 mb-4 max-w-sm leading-relaxed">
+			  Menyajikan keindahan, sejarah, dan pesatnya perkembangan negara kepulauan terbesar di dunia untuk diperkenalkan kepada dunia.
+			</p>
+			<div class="flex space-x-4">
+			  <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+			  <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+			  <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+			  <a href="#" class="text-gray-400 hover:text-white transition-colors"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+			</div>
+		  </div>
+
+		  <div>
+			<h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Navigasi</h4>
+			<ul class="space-y-2 text-sm">
+			  <li><a href="#sejarah" class="hover:text-[#D52B1E] transition-colors">Sejarah Bangsa</a></li>
+			  <li><a href="#perkembangan" class="hover:text-[#D52B1E] transition-colors">Era Modern</a></li>
+			  <li><a href="#bersejarah" class="hover:text-[#D52B1E] transition-colors">Tempat Bersejarah</a></li>
+			  <li><a href="#wisata" class="hover:text-[#D52B1E] transition-colors">Destinasi Wisata</a></li>
+			</ul>
+		  </div>
+
+		  <div>
+			<h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Informasi</h4>
+			<ul class="space-y-2 text-sm">
+			  <li><a href="#" class="hover:text-[#D52B1E] transition-colors">Tentang Kami</a></li>
+			  <li><a href="#" class="hover:text-[#D52B1E] transition-colors">Kontak</a></li>
+			  <li><a href="#" class="hover:text-[#D52B1E] transition-colors">Kebijakan Privasi</a></li>
+			</ul>
+		  </div>
+		</div>
+
+		<div class="pt-8 border-t border-gray-800 text-sm text-center text-gray-500 flex flex-col md:flex-row justify-between items-center">
+		  <p>&copy; 2026 Pesona Indonesia. Dibuat dengan <span class="text-[#D52B1E]">❤</span> untuk Nusantara.</p>
+		  <div class="mt-4 md:mt-0 flex gap-4">
+			<span class="flex items-center gap-1"><div class="w-3 h-2 bg-[#D52B1E]"></div><div class="w-3 h-2 bg-white"></div></span>
+		  </div>
+		</div>
+	  </div>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        const navBrand = document.getElementById('nav-brand');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuBtn = document.getElementById('mobile-menu-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md', 'py-1');
+                navBrand.classList.replace('text-white', 'text-gray-900');
+                navLinks.forEach(link => {
+                    link.classList.replace('text-white', 'text-gray-600');
+                    link.classList.replace('hover:text-red-200', 'hover:text-[#D52B1E]');
+                });
+                menuBtn.classList.replace('text-white', 'text-gray-900');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-md', 'py-1');
+                navBrand.classList.replace('text-gray-900', 'text-white');
+                navLinks.forEach(link => {
+                    link.classList.replace('text-gray-600', 'text-white');
+                    link.classList.replace('hover:text-[#D52B1E]', 'hover:text-red-200');
+                });
+                menuBtn.classList.replace('text-gray-900', 'text-white');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Simple animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.hover-lift');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight * 0.8) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Initial setup for animation elements
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            el.style.opacity = '0.9'; // start slightly visible
+            el.style.transition = 'all 0.6s ease-out';
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+        // Trigger once on load
+        setTimeout(animateOnScroll, 100);
+
+        // Add custom animation class for hero text
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in-up {
+                animation: fadeInUp 0.8s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+</script>
+  </body>
+</html>
